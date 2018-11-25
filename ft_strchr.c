@@ -6,13 +6,13 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:45:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/13 14:51:07 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/25 20:15:07 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (s)
 	{

@@ -6,7 +6,7 @@
 #    By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/19 14:24:50 by amoachon          #+#    #+#              #
-#    Updated: 2018/11/22 14:18:11 by amoachon         ###   ########.fr        #
+#    Updated: 2018/11/25 20:41:23 by amoachon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,6 @@ SRCS = 		ft_atoi.c\
 			ft_striter.c\
 			ft_striteri.c\
 			ft_strjoin.c\
-			ft_strlcat.c\
 			ft_strlen.c\
 			ft_strmap.c\
 			ft_strmapi.c\
@@ -64,12 +63,13 @@ SRCS = 		ft_atoi.c\
 			ft_strnew.c\
 			ft_strnstr.c\
 			ft_strrchr.c\
-			ft_strsplit.c\
 			ft_strstr.c\
 			ft_strsub.c\
 			ft_strtrim.c\
 			ft_tolower.c\
 			ft_toupper.c\
+			ft_strsplit.c\
+			ft_strlcat.c\
 
 HEADERS = libft.h
 

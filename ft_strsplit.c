@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:29:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/19 13:20:49 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/25 20:48:17 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,9 +74,9 @@ char	**ft_strsplit(char const *s, char c)
 			while (s[i] != c && *s)
 				i++;
 		}
-		*tab++;
+		tab++;
 	}
-	*tab++ = '\0';
+	tab = '\0';
 	return (tab);
 }
 

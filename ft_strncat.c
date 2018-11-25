@@ -6,13 +6,13 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:33:01 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/13 14:52:23 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/25 20:16:28 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strncat(char *dest, const char *src, size_t n)
+char	*ft_strncat(char *dest, const char *src, size_t n)
 {
 	unsigned int i;
 	unsigned int c;
