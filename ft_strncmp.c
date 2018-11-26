@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 22:37:07 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 04:03:39 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 21:17:46 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t len)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	if (len == 0)
