@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:35:01 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 23:22:23 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 23:37:09 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	c;
-	int		m;
+	size_t	m;
 
 	i = 0;
 	c = 0;

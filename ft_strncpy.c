@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:22:08 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 21:43:51 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 23:37:28 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
 		i++;
 	}
 	dest[i] = src[i];
-	if (n < ft_strlen(src))
+	if ((int)n < ft_strlen(src))
 	{
 		i++;
 		while (dest[i])
