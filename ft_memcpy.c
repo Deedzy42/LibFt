@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 18:52:59 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/10 19:06:28 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 19:31:11 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int i;
+	int i;
 
 	i = 0;
 	while (n--)

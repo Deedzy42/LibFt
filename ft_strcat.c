@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:29:08 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/25 20:14:58 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 20:30:39 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strcat(char *dest, const char *src)
 {
-	unsigned int i;
-	unsigned int c;
+	int i;
+	int c;
 
 	i = 0;
 	c = 0;

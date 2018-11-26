@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 23:18:38 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/16 16:10:53 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 20:20:36 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_atoi(const char *str)
 {
-	unsigned int i;
+	int i;
 	int n;
 	int s;
  
@@ -31,7 +31,7 @@ int		ft_atoi(const char *str)
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		n *= 10;
-		n += (int)str[i] - '0';
+		n += str[i] - '0';
 		i++;
 	}
 	return (s * n);

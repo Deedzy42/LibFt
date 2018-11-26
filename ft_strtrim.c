@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 12:34:39 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/15 12:44:05 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 02:49:38 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 char	*ft_strtrim(char const *s)
 {
-	unsigned int d;
-	unsigned int f;
+	int d;
+	int f;
 
+	if (!s)
+		return ((char *)s);
 	d = 0;
 	f = ft_strlen(s) - 1;
 	while ((s[d] == ' ' || s[d] == '\t' || s[d] == '\n') && s[d])
