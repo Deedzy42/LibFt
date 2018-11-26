@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 19:08:22 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/10 19:10:49 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 21:55:27 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	unsigned int i;
+	int i;
 
 	i = 0;
-	while (n-- && ((unsigned char *)src)[i] != (unsigned char)c)
+	while (n-- && ((unsigned char *)src)[i] != c)
 	{
 		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;

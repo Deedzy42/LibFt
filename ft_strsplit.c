@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:29:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 21:26:42 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 22:12:38 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,12 @@ char	*ft_nbcar(char *s, char c, int *i, char *tab)
 	int		y;
 
 	y = 0;
-	while (s[*i + y] != c)
+	while (s[*i + y] != c && s[*i + y])
 		y++;
 	if ((tab = (char *)malloc(sizeof(tab) * y + 1)) == NULL)
 		return (NULL);
 	y = 0;
-	while (s[*i] != c)
+	while (s[*i] != c && s[*i])
 	{
 		tab[y] = s[*i];
 		y++;
@@ -59,6 +59,8 @@ char	**ft_strsplit(char const *s, char c)
 	int		y;
 
 	nbmo = ft_nbmo((char *)s, c);
+	if (nbmo == 0)
+		return (NULL);
 	if ((tab = (char **)malloc(sizeof(tab) * nbmo + 1)) == NULL)
 		return (NULL);
 	i = 0;
@@ -67,11 +69,9 @@ char	**ft_strsplit(char const *s, char c)
 	{
 		while (s[i] == c && *s)
 			i++;
-		if (s[i] != '\0')
-		{
+		if (s[i])
 			if ((tab[y] = ft_nbcar((char *)s, c, &i, tab[y])) == NULL)
 				return (NULL);
-		}
 		y++;
 	}
 	tab[y][0] = '\0';

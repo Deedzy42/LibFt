@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:45:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 20:25:59 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 22:21:17 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
+	if (s[i] == c)
+		return ((char *)s + i);
 	return (NULL);
 }

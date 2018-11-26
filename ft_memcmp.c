@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 15:31:40 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 16:05:06 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/26 22:15:25 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,5 @@
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const char *cs1;
-	const char *cs2;
-
-	cs1 = s1;
-	cs2 = s2;
-	return (ft_strncmp(cs1, cs2, n));
+	return (ft_strncmp((char *)s1, (char *)s2, n));
 }
