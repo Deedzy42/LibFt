@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 17:03:49 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/27 02:00:43 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 17:13:52 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <sys/types.h>
-# include <sys/uio.h>
 
 typedef struct		s_list
 {

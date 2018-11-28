@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 19:12:02 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/28 17:05:33 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 17:15:06 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 
 	d = (char *)dest;
 	s = (const char *)src;
-	i = 0;
+	i = -1;
 	if (d < s)
-		while (i < len)
-			d[i] = s[i++];
+		while (++i < len)
+			d[i] = s[i];
 	else
-		while (len > 0)
-			d[len] = s[len--];
+		while (len-- > 0)
+			d[len] = s[len];
 	return (dest);
 }
