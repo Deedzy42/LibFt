@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 11:22:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/15 11:29:39 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:52:06 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	free(*as);
-	*as = NULL;
+	if (as != NULL || *as != NULL)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

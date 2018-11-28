@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 23:18:38 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 22:12:54 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:46:29 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_atoi(const char *str)
 {
-	int i;
-	int n;
-	int s;
+	unsigned int i;
+	unsigned int n;
+	unsigned int s;
  
 	i = 0;
 	n = 0;

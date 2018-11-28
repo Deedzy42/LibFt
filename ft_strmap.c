@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 11:43:29 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/28 16:42:22 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:55:45 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char			*str;
 	unsigned int	i;
 
+	if (!(s) || !(f))
+		return (NULL);
 	i = 0;
 	n = ft_strlen(s);
 	if (!s || !f)

@@ -6,15 +6,18 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 11:33:27 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/15 11:37:03 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:53:55 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	while (*s)
+	if (s && f)
 	{
-		(*f)(s);
-		s++;
+		while (*s)
+		{
+			(*f)(s);
+			s++;
+		}
 	}
 }

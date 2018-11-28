@@ -6,13 +6,13 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 16:24:02 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/28 16:43:18 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 17:07:17 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_coucou(char *str, int nb, int i)
+static void	ft_coucou(char *str, int nb, int i)
 {
 	i--;
 	if (nb > 9)
@@ -24,7 +24,7 @@ void	ft_coucou(char *str, int nb, int i)
 		str[i] = nb + 48;
 }
 
-int		ft_size(int nb)
+static int	ft_size(int nb)
 {
 	int		i;
 
@@ -44,7 +44,7 @@ int		ft_size(int nb)
 	return (i + 1);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	int		i;

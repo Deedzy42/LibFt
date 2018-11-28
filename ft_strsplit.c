@@ -6,20 +6,20 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:29:47 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 22:12:38 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 17:07:44 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_char(const char *s, char c)
+static int	ft_char(const char *s, char c)
 {
 	if (!(*s) || *s == c)
 		return (1);
 	return (1 + ft_char(s + 1, c));
 }
 
-int		ft_word(const char *s, char c)
+static int	ft_word(const char *s, char c)
 {
 	if (!(*s))
 		return (0);
@@ -28,7 +28,7 @@ int		ft_word(const char *s, char c)
 	return (0 + ft_word(s + 1, c));
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	char	**tab;
 	int		i;

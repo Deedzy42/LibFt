@@ -6,12 +6,14 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 11:55:07 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/15 12:04:32 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:58:22 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strequ(char const *s1, char const *s2)
 {
+	if (!(s1) || !(s2))
+		return (0);
 	while (*s1 && *s2)
 	{
 		if (*s1 != *s2)
