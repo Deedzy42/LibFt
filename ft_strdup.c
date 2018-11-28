@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:07:16 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/25 20:11:40 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:38:58 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 char	*ft_strdup(const char *s1)
 {
-	unsigned int	i;
-	char			*str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	while (s1[i])
-		i++;
-	if (!(str = (char*)malloc(sizeof(str) * i + 1)))
+	if (!(str = (char*)malloc(sizeof(*str) * ft_strlen(s1) + 1)))
 		return (0);
-	i = 0;
 	while (s1[i])
 	{
 		str[i] = s1[i];

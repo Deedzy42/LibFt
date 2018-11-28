@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 16:24:02 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/10 18:41:03 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 16:43:18 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,13 @@ char	*ft_itoa(int n)
 
 	if (n == -2147483648)
 	{
-		if ((str = (char *)malloc(sizeof(str) * 12)) == NULL)
+		if ((str = (char *)malloc(sizeof(*str) * 12)) == NULL)
 			return (NULL);
 		ft_strcpy(str, "-2147483648");
 		return (str);
 	}
 	i = ft_size(n);
-	if ((str = (char *)malloc(sizeof(str) * i)) == NULL)
+	if ((str = (char *)malloc(sizeof(*str) * i)) == NULL)
 		return (NULL);
 	if (n < 0)
 	{

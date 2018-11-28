@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 16:19:28 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 21:58:02 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/27 01:22:48 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*lst;
 
-	if ((lst = (t_list *)malloc(sizeof(lst))) == NULL)
+	if ((lst = (t_list *)malloc(sizeof(t_list))) == NULL)
 		return (NULL);
 	if (content == NULL)
 	{

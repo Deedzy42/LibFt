@@ -12,68 +12,47 @@
 
 #include "libft.h"
 
-int		ft_nbmo(char *s, char c)
+int		ft_char(const char *s, char c)
 {
-	int		i;
-
-	i = 0;
-	while (*s)
-	{
-		if (*s != c)
-		{
-			i++;
-			while (*s != c && *s)
-				s++;
-			s--;
-		}
-		s++;
-	}
-	return (i);
+	if (!(*s) || *s == c)
+		return (1);
+	return (1 + ft_char(s + 1, c));
 }
 
-char	*ft_nbcar(char *s, char c, int *i, char *tab)
+int		ft_word(const char *s, char c)
 {
-	int		y;
-
-	y = 0;
-	while (s[*i + y] != c && s[*i + y])
-		y++;
-	if ((tab = (char *)malloc(sizeof(tab) * y + 1)) == NULL)
-		return (NULL);
-	y = 0;
-	while (s[*i] != c && s[*i])
-	{
-		tab[y] = s[*i];
-		y++;
-		*i += 1;
-	}
-	tab[y] = '\0';
-	return (tab);
+	if (!(*s))
+		return (0);
+	if ((*s != c) && (*(s + 1) == c || *(s + 1) == '\0'))
+		return (1 + ft_word(s + 1, c));
+	return (0 + ft_word(s + 1, c));
 }
 
 char	**ft_strsplit(char const *s, char c)
 {
-	int		nbmo;
 	char	**tab;
 	int		i;
-	int		y;
+	int		j;
 
-	nbmo = ft_nbmo((char *)s, c);
-	if (nbmo == 0)
+	if (!(s))
 		return (NULL);
-	if ((tab = (char **)malloc(sizeof(tab) * nbmo + 1)) == NULL)
+	if ((tab = (char**)malloc(sizeof(char*) * (ft_word(s, c) + 1))) == NULL)
 		return (NULL);
+	tab[ft_word(s, c)] = 0;
 	i = 0;
-	y = 0;
-	while (nbmo--)
+	while (*s)
 	{
-		while (s[i] == c && *s)
-			i++;
-		if (s[i])
-			if ((tab[y] = ft_nbcar((char *)s, c, &i, tab[y])) == NULL)
+		if (*s == c)
+			s++;
+		else
+		{
+			j = 0;
+			if ((tab[i] = (char*)malloc(sizeof(char) * ft_char(s, c))) == NULL)
 				return (NULL);
-		y++;
+			while (*s != c && *s != '\0')
+				tab[i][j++] = *(s++);
+			tab[i++][j] = '\0';
+		}
 	}
-	tab[y][0] = '\0';
 	return (tab);
 }

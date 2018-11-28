@@ -6,13 +6,15 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:00:01 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/13 22:49:51 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/27 02:00:18 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int 	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while (s[i])
