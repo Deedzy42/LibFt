@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/25 21:01:57 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/27 01:41:42 by amoachon         ###   ########.fr       */
+/*   Updated: 2019/01/24 17:28:27 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 
 	if (lst == NULL)
 		return (NULL);
-	if ((new = (t_list *)malloc(sizeof(t_list))) == NULL)
-		return (NULL);
-	if((new = (*f)(lst)) == NULL)
+	if ((new = (*f)(lst)) == NULL)
 		return (NULL);
 	tmp = new;
 	while (lst->next)

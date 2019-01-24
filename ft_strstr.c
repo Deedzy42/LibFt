@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:54:43 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/26 19:52:02 by amoachon         ###   ########.fr       */
+/*   Updated: 2019/01/24 13:42:10 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strstr(const char *src, const char *dest)
 {
 	int i;
 	int c;
- 
+
 	i = 0;
 	c = 0;
 	if (*dest == '\0')
@@ -29,7 +29,7 @@ char	*ft_strstr(const char *src, const char *dest)
 			while (src[i + c] == dest[c])
 			{
 				if (dest[c + 1] == '\0')
-						return ((char *)src + i);
+					return ((char *)src + i);
 				c++;
 			}
 		}

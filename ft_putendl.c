@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 16:29:25 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/19 13:58:32 by amoachon         ###   ########.fr       */
+/*   Updated: 2019/01/24 16:54:07 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 void	ft_putendl(char const *s)
 {
 	if (*s)
-	{
 		write(1, s, ft_strlen(s));
-		ft_putchar('\n');
-	}
+	ft_putchar('\n');
 }
